@@ -1,0 +1,8 @@
+console.log("comments#create.js.erb")
+
+
+//creating a variable to store the comment mark-up 
+var added_comment = $("<p><%= @comment.body %></p>");
+
+//placing comment in correct place.
+$("#new_comment_form").before(added_comment);
