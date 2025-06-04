@@ -1,0 +1,4 @@
+console.log("you got friend request")
+$("#<%= dom_id(@follow_request) %>").fadeOut(1000, function() {
+  $(this).remove();
+});
